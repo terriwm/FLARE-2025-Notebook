@@ -1,0 +1,155 @@
+\documentclass[12pt,oneside,a4paper,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[margin=2.25cm,headheight=26pt,includeheadfoot]{geometry}
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{changepage}
+\usepackage{amsmath} %not sure what this does
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{titling}
+\usepackage{float}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{indentfirst}
+\usepackage{lscape}
+\usepackage{booktabs,caption}
+\usepackage[flushleft]{threeparttable}
+\usepackage[english]{nomencl}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{datetime2}
+\usepackage{minted}
+\usepackage{hyperref}
+\usepackage{tocloft}
+
+
+% --- set footer and header ---
+\pagestyle{fancy}
+\fancyhf{}
+
+\setlength{\parindent}{2em}
+\title{COLSim Code Review and Proposal} % to reference as \title, dont use \maketitle
+\makeatletter\let\Title\@title\makeatother
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\rmdefault}{ptm}
+
+\renewcommand\cftsecfont{\Large\bfseries}
+\renewcommand\cftsubsecfont{\large}
+
+
+\rhead{\nouppercase{\rightmark}}
+\lhead{\Title}
+\lfoot{\raisebox{-0.25cm}[0pt][0pt]{\includegraphics[height=1.5cm]{root/ENSTA-LogoH-COULEUR.png}}} % right header logo
+\rfoot{\includegraphics[height=1cm]{root/Flinders_University_Logo_Horizontal_RGB_Master.eps}}
+\setlength\headheight{16pt}
+\setlength{\footskip}{80pt}
+
+% --- End of page settings ---
+
+
+\begin{document}
+
+\pagenumbering{arabic} %set page numbers as arabic numerals
+\fancyfoot[C]{Page \thepage\ of \pageref{EndOfText}} %sets up footer such that it has page count out of total page count
+\hypersetup{hidelinks} %hide hyperlink box outlines for links
+
+% Cover Page File
+\input{sources/0_coverpage.tex}
+
+% Table of Contents File
+\input{sources/1_TOC.tex}
+
+
+% ------ Introduction ------
+\input{sources/2_introduction.tex}
+
+% ------ Code Review ------
+\newpage
+\section{Code Review}
+\lipsum[8]
+
+% ------ Proposal ------
+\newpage
+\section{Proposal}
+\lipsum[10]
+
+
+\newpage
+\addcontentsline{toc}{section}{List of Figures}
+%\fancyfoot[C]{Page \thepage\ of \pageref{endOfDoc}}
+\listoffigures
+\thispagestyle{fancy}
+
+\newpage
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+\thispagestyle{fancy}
+
+\newpage
+\addcontentsline{toc}{section}{Nomenclature}
+%\input{sources/9_nomenclat.tex}
+\makenomenclature
+%\clearpage
+%\mbox{}
+
+\nomenclature{EV}{Electric Vehicle}
+\nomenclature{AC}{Alternating Current}
+\nomenclature{DC}{Direct Current}
+\nomenclature{IGBT}{Insulated-gate Bipolar Transistor}
+\nomenclature{PV}{Photovoltaics}
+\nomenclature{RMS}{Root Mean Square}
+\nomenclature{FCS}{Fast Charging Station}
+\nomenclature{PMU}{Phase Measurement Unit}
+\nomenclature{THD}{Total Harmonic Distortion}
+\nomenclature{EMI}{Electromagnetic Interference}
+\nomenclature{$h$}{Planck constant}
+ 
+\printnomenclature
+
+% \newpage
+% \addcontentsline{toc}{section}{References}
+% \bibliography{document.bib} 
+% \bibliographystyle{ieeetr}
+
+\newpage
+\section{Appendix A}
+
+\label{EndOfText}
+\end{document}
+
+% --- Code for future reference ---
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width = 0.2\textwidth ]{figures/tex.png}
+%     \caption{Benny The Beaver.} 
+%     %\cite{benny_history}
+%     % \label{fig:bennyb}
+% \end{figure}
+
+%\autoref{fig:bennyb}
+
+% \begin{table}[H]
+%     \centering
+%     \caption{That is a table.}
+%     \begin{tabular}{|c|c|c|}
+%     \centering
+%     \textbf{Lorem} & \textbf{Ipsum} & \textbf{Lorem [\$]} \\ \hline \hline
+% 1   & lipsum    & lorem     \\ \hline   
+% 2   & lipsum    & lorem   \\ \hline
+% 3   & lipsum    & lorem  
+%     \end{tabular}
+%     \label{tab:table1}
+% \end{table}
+
+%\autoref{tab:table1}
