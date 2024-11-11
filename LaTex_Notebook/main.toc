@@ -1,11 +1,7 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}Needs and Requirements}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Needs of the Project}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Requirements of the Project}{3}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Code Review}{4}{section.3}%
-\contentsline {section}{\numberline {4}Proposal}{5}{section.4}%
-\contentsline {section}{List of Figures}{6}{section.4}%
-\contentsline {section}{List of Tables}{7}{section.4}%
-\contentsline {section}{Nomenclature}{8}{section.4}%
-\contentsline {section}{\numberline {5}Appendix A}{8}{section.5}%
+\contentsline {section}{\numberline {1}SECTION NAME}{2}{section.1}%
+\contentsline {section}{\numberline {2}SECTION NAME}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Sub Section Name}{3}{subsection.2.1}%
+\contentsline {section}{List of Tables}{4}{subsection.2.1}%
+\contentsline {section}{List of Figures}{5}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Appendix A}{6}{section.3}%

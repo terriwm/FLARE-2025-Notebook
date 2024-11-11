@@ -49,13 +49,12 @@
 
 \rhead{\nouppercase{\rightmark}}
 \lhead{\Title}
-\lfoot{\raisebox{-0.25cm}[0pt][0pt]{\includegraphics[height=1.5cm]{root/ENSTA-LogoH-COULEUR.png}}} % right header logo
-\rfoot{\includegraphics[height=1cm]{root/Flinders_University_Logo_Horizontal_RGB_Master.eps}}
+\lfoot{\raisebox{-1.3cm}[0pt][0pt]{\includegraphics[height=2cm]{root/footer_logo_placeholder.png}}} % right header logo
+\rfoot{\raisebox{-0.8cm}[0pt][0pt]{\includegraphics[height=1cm]{root/Flinders_University_Logo_Horizontal_RGB_Master.eps}}}
 \setlength\headheight{16pt}
-\setlength{\footskip}{80pt}
+\setlength{\footskip}{70pt}
 
 % --- End of page settings ---
-
 
 \begin{document}
 
@@ -73,62 +72,35 @@
 % ------ Introduction ------
 \input{sources/2_introduction.tex}
 
-% ------ Code Review ------
-\newpage
-\section{Code Review}
-\lipsum[8]
+% ------ List of Tables ------
+\input{sources/7_list_of_tables.tex}
 
-% ------ Proposal ------
-\newpage
-\section{Proposal}
-\lipsum[10]
+% ------ List of Figures ------
+\input{sources/8_list_of_figures.tex}
 
-
-\newpage
-\addcontentsline{toc}{section}{List of Figures}
-%\fancyfoot[C]{Page \thepage\ of \pageref{endOfDoc}}
-\listoffigures
-\thispagestyle{fancy}
-
-\newpage
-\addcontentsline{toc}{section}{List of Tables}
-\listoftables
-\thispagestyle{fancy}
-
-\newpage
-\addcontentsline{toc}{section}{Nomenclature}
+% ------ Nomenclature Index ------
+% \newpage
+% \addcontentsline{toc}{section}{Nomenclature}
 %\input{sources/9_nomenclat.tex}
-\makenomenclature
+% \makenomenclature
 %\clearpage
 %\mbox{}
 
-\nomenclature{EV}{Electric Vehicle}
-\nomenclature{AC}{Alternating Current}
-\nomenclature{DC}{Direct Current}
-\nomenclature{IGBT}{Insulated-gate Bipolar Transistor}
-\nomenclature{PV}{Photovoltaics}
-\nomenclature{RMS}{Root Mean Square}
-\nomenclature{FCS}{Fast Charging Station}
-\nomenclature{PMU}{Phase Measurement Unit}
-\nomenclature{THD}{Total Harmonic Distortion}
-\nomenclature{EMI}{Electromagnetic Interference}
-\nomenclature{$h$}{Planck constant}
- 
-\printnomenclature
-
+% ------ Bibliography ------
 % \newpage
 % \addcontentsline{toc}{section}{References}
 % \bibliography{document.bib} 
 % \bibliographystyle{ieeetr}
 
-\newpage
-\section{Appendix A}
+% ------ Appendicies ------
+\input{sources/99_appendices.tex}
 
 \label{EndOfText}
 \end{document}
 
 % --- Code for future reference ---
 
+% Example of how to insert a figure:
 % \begin{figure}[H]
 %     \centering
 %     \includegraphics[width = 0.2\textwidth ]{figures/tex.png}
@@ -136,9 +108,9 @@
 %     %\cite{benny_history}
 %     % \label{fig:bennyb}
 % \end{figure}
-
 %\autoref{fig:bennyb}
 
+% Example of how to insert a table:
 % \begin{table}[H]
 %     \centering
 %     \caption{That is a table.}
@@ -151,5 +123,4 @@
 %     \end{tabular}
 %     \label{tab:table1}
 % \end{table}
-
 %\autoref{tab:table1}
