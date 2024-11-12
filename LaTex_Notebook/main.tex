@@ -1,60 +1,10 @@
 \documentclass[12pt,oneside,a4paper,english]{article}
-\usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
-\usepackage[margin=2.25cm,headheight=26pt,includeheadfoot]{geometry}
-\usepackage[english]{babel}
-\usepackage{color}
-\usepackage{titlesec}
-\usepackage{changepage}
-\usepackage{amsmath} %not sure what this does
-\usepackage{enumitem}
-\usepackage{graphicx}
-\usepackage{fancyhdr}
-\usepackage{lastpage}
-\usepackage{caption}
-\usepackage{setspace}
-\usepackage{multirow}
-\usepackage{titling}
-\usepackage{float}
-\usepackage{comment}
-\usepackage{booktabs}
-\usepackage{indentfirst}
-\usepackage{lscape}
-\usepackage{booktabs,caption}
-\usepackage[flushleft]{threeparttable}
-\usepackage[english]{nomencl}
-\usepackage{xcolor}
-\usepackage{lipsum}
-\usepackage{datetime2}
-\usepackage{minted}
-\usepackage{hyperref}
-\usepackage{tocloft}
+
+% --- Installed Packages ---
+\input{sources/00_preamble.tex}
 
 
-% --- set footer and header ---
-\pagestyle{fancy}
-\fancyhf{}
-
-\setlength{\parindent}{2em}
-\title{COLSim Code Review and Proposal} % to reference as \title, dont use \maketitle
-\makeatletter\let\Title\@title\makeatother
-
-\renewcommand{\headrulewidth}{1pt}
-\renewcommand{\footrulewidth}{1pt}
-\renewcommand{\rmdefault}{ptm}
-
-\renewcommand\cftsecfont{\Large\bfseries}
-\renewcommand\cftsubsecfont{\large}
-
-
-\rhead{\nouppercase{\rightmark}}
-\lhead{\Title}
-\lfoot{\raisebox{-1.3cm}[0pt][0pt]{\includegraphics[height=2cm]{root/footer_logo_placeholder.png}}} % right header logo
-\rfoot{\raisebox{-0.8cm}[0pt][0pt]{\includegraphics[height=1cm]{root/Flinders_University_Logo_Horizontal_RGB_Master.eps}}}
-\setlength\headheight{16pt}
-\setlength{\footskip}{70pt}
-
-% --- End of page settings ---
+% ---- Start of Document ----
 
 \begin{document}
 
@@ -67,7 +17,6 @@
 
 % Table of Contents File
 \input{sources/1_TOC.tex}
-
 
 % ------ Introduction ------
 \input{sources/2_introduction.tex}
@@ -124,3 +73,11 @@
 %     \label{tab:table1}
 % \end{table}
 %\autoref{tab:table1}
+
+% \section{Design Objectives}
+% \begin{wrapfigure}[11]{r}{0.4\textwidth}
+%   \vspace{-20pt}
+%   \includegraphics[width=1\linewidth]{figures/IMG_0310.png}
+%   \caption{Photo of the VEX High-Stakes game Field Arena with two robots inside.}
+%   \label{fig:highstakesfield}
+% \end{wrapfigure}

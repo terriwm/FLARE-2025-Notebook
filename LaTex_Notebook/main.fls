@@ -8,6 +8,9 @@ INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT .\sources\00_preamble.tex
+INPUT .\sources\00_preamble.tex
+INPUT sources\00_preamble.tex
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
@@ -238,6 +241,8 @@ INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uni
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
+INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
+INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Users\Dilip\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ptm.fd
