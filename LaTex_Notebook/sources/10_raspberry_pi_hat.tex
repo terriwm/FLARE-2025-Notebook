@@ -1,0 +1,17 @@
+\newpage
+
+
+\section{Raspberry Pi Hat Design}
+After the previous season of Vex, it was realised that the existing solution for providing power to the Raspberry Pi was too bulky, which provided difficulty when packaging the robot. The previous solution existed of a battery pack that ran into a seperate buck converter module, which lowered and regulated the voltage from the battery which then powered the Raspberry Pi. In order to make packaging the robot easier going into the next season, it was decided that the buck converter module could be incorporated into a hat, which directly interfaces with the Raspberry Pi.
+
+\subsection{Design Requirements}
+
+\begin{align}
+    V_{in} &\approx 12V \\
+    V_{out} &= 5V \\
+    I_{out} &= 6.5A \\
+    \Delta V &< 150mV_{pk-pk} \\
+    Efficiency &> 85\%
+\end{align}
+
+The Raspberry Pi has an operating voltage of $5V$, this is typically supplied over USB which has a nominal voltage ripple of $150mV_{pk-pk}$ therefore the buck converter must produce this voltage with any voltage ripple less than USB. As the buck converter will be operating from battery power, the input voltage will vary, however will be roughly $12V$. The Raspberry Pi also can draw a maximum current of $5A$ so it was decided that the converter will be able to be able to supply $6.5A$ in order to allow headroom for additional peripherals. Finally the efficiency of greater than $85\%$ was selected in order to minimise the requirement for heatsinks or active cooling methods.

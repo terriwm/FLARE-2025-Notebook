@@ -4,4 +4,6 @@
 \contentsline {subsection}{\numberline {2.1}Sub Section Name}{3}{subsection.2.1}%
 \contentsline {section}{List of Tables}{4}{subsection.2.1}%
 \contentsline {section}{List of Figures}{5}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Appendix A}{6}{section.3}%
+\contentsline {section}{\numberline {3}Raspberry Pi Hat Design}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Design Requirements}{6}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Appendix A}{7}{section.4}%
