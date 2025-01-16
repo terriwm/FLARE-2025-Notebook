@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.1)  2 JAN 2025 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.1)  16 JAN 2025 18:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -159,7 +159,16 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks26
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (c:/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+) (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip56
 \enit@outerparindent=\dimen165
@@ -669,12 +678,20 @@ Package epstopdf Info: Source file: <root/Flinders_University_Logo_Stacked_RGB_M
 (epstopdf)             Command: <repstopdf --outfile=root/Flinders_University_Logo_Stacked_RGB_Master-eps-converted-to.pdf root/Flinders_University_Logo_Stacked_RGB_Master.eps>
 (epstopdf)             \includegraphics on input line 6.
 Package epstopdf Info: Output file is already uptodate.
-<root/Flinders_University_Logo_Stacked_RGB_Master-eps-converted-to.pdf, id=34, 445.665pt x 465.74pt>
+<root/Flinders_University_Logo_Stacked_RGB_Master-eps-converted-to.pdf, id=42, 445.665pt x 465.74pt>
 File: root/Flinders_University_Logo_Stacked_RGB_Master-eps-converted-to.pdf Graphic file (type pdf)
 <use root/Flinders_University_Logo_Stacked_RGB_Master-eps-converted-to.pdf>
 Package pdftex.def Info: root/Flinders_University_Logo_Stacked_RGB_Master-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 140.84258pt x 147.18501pt.
-<root/coverpage_logo_placeholder.png, id=35, 501.875pt x 501.875pt>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+ (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+ (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<root/coverpage_logo_placeholder.png, id=43, 501.875pt x 501.875pt>
 File: root/coverpage_logo_placeholder.png Graphic file (type png)
 <use root/coverpage_logo_placeholder.png>
 Package pdftex.def Info: root/coverpage_logo_placeholder.png  used on input line 10.
@@ -689,7 +706,7 @@ Package pdftex.def Info: root/coverpage_logo_placeholder.png  used on input line
 
 ) (./sources/2_introduction.tex
 
-<root/footer_logo_placeholder.png, id=56, 501.875pt x 501.875pt>
+<root/footer_logo_placeholder.png, id=66, 501.875pt x 501.875pt>
 File: root/footer_logo_placeholder.png Graphic file (type png)
 <use root/footer_logo_placeholder.png>
 Package pdftex.def Info: root/footer_logo_placeholder.png  used on input line 3.
@@ -703,7 +720,7 @@ Package epstopdf Info: Source file: <root/Flinders_University_Logo_Horizontal_RG
 (epstopdf)             Command: <repstopdf --outfile=root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf root/Flinders_University_Logo_Horizontal_RGB_Master.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
-<root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf, id=58, 1004.75375pt x 294.09875pt>
+<root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf, id=68, 1004.75375pt x 294.09875pt>
 File: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf Graphic file (type pdf)
 <use root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf>
 Package pdftex.def Info: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf  used on input line 3.
@@ -797,7 +814,51 @@ File: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf G
 <use root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf>
 Package pdftex.def Info: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf  used on input line 1.
 (pdftex.def)             Requested size: 97.20036pt x 28.45274pt.
-[5]) (./sources/99_appendices.tex
+[5]
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 29.
+
+
+
+File: root/footer_logo_placeholder.png Graphic file (type png)
+<use root/footer_logo_placeholder.png>
+Package pdftex.def Info: root/footer_logo_placeholder.png  used on input line 32.
+(pdftex.def)             Requested size: 56.89883pt x 56.9055pt.
+Package epstopdf Info: Source file: <root/Flinders_University_Logo_Horizontal_RGB_Master.eps>
+(epstopdf)                    date: 2025-01-01 20:58:44
+(epstopdf)                    size: 1191854 bytes
+(epstopdf)             Output file: <root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-01 20:58:44
+(epstopdf)                    size: 21208 bytes
+(epstopdf)             Command: <repstopdf --outfile=root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf root/Flinders_University_Logo_Horizontal_RGB_Master.eps>
+(epstopdf)             \includegraphics on input line 32.
+Package epstopdf Info: Output file is already uptodate.
+File: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf Graphic file (type pdf)
+<use root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf>
+Package pdftex.def Info: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf  used on input line 32.
+(pdftex.def)             Requested size: 97.20036pt x 28.45274pt.
+[6]
+
+File: root/footer_logo_placeholder.png Graphic file (type png)
+<use root/footer_logo_placeholder.png>
+Package pdftex.def Info: root/footer_logo_placeholder.png  used on input line 74.
+(pdftex.def)             Requested size: 56.89883pt x 56.9055pt.
+Package epstopdf Info: Source file: <root/Flinders_University_Logo_Horizontal_RGB_Master.eps>
+(epstopdf)                    date: 2025-01-01 20:58:44
+(epstopdf)                    size: 1191854 bytes
+(epstopdf)             Output file: <root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-01-01 20:58:44
+(epstopdf)                    size: 21208 bytes
+(epstopdf)             Command: <repstopdf --outfile=root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf root/Flinders_University_Logo_Horizontal_RGB_Master.eps>
+(epstopdf)             \includegraphics on input line 74.
+Package epstopdf Info: Output file is already uptodate.
+File: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf Graphic file (type pdf)
+<use root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf>
+Package pdftex.def Info: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf  used on input line 74.
+(pdftex.def)             Requested size: 97.20036pt x 28.45274pt.
+[7]) (./sources/99_appendices.tex
 
 File: root/footer_logo_placeholder.png Graphic file (type png)
 <use root/footer_logo_placeholder.png>
@@ -816,7 +877,7 @@ File: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf G
 <use root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf>
 Package pdftex.def Info: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf  used on input line 2.
 (pdftex.def)             Requested size: 97.20036pt x 28.45274pt.
-[6])
+[8])
 
 File: root/footer_logo_placeholder.png Graphic file (type png)
 <use root/footer_logo_placeholder.png>
@@ -835,9 +896,9 @@ File: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf G
 <use root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf>
 Package pdftex.def Info: root/Flinders_University_Logo_Horizontal_RGB_Master-eps-converted-to.pdf  used on input line 51.
 (pdftex.def)             Requested size: 97.20036pt x 28.45274pt.
-[7] 
+[9] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20250102212153 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20250116182954 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
 (./main.aux)
  ***********
@@ -845,21 +906,21 @@ LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-09>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0203E47CD182363806EE2730029895D0;1026.
+(rerunfilecheck)             Checksum: F9E85CD14E80ECC5C266303347C22D95;1327.
  ) 
 Here is how much of TeX's memory you used:
- 22815 strings out of 473254
- 447012 string characters out of 5722072
- 1100666 words of memory out of 5000000
- 45631 multiletter control sequences out of 15000+600000
- 595751 words of font info for 67 fonts, out of 8000000 for 9000
+ 23386 strings out of 473254
+ 453539 string characters out of 5722072
+ 1113301 words of memory out of 5000000
+ 46141 multiletter control sequences out of 15000+600000
+ 596986 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,15n,110p,816b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (8 pages, 295173 bytes).
+ 115i,16n,110p,816b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (10 pages, 334616 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

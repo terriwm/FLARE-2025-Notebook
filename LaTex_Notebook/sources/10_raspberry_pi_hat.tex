@@ -15,3 +15,74 @@ After the previous season of Vex, it was realised that the existing solution for
 \end{align}
 
 The Raspberry Pi has an operating voltage of $5V$, this is typically supplied over USB which has a nominal voltage ripple of $150mV_{pk-pk}$ therefore the buck converter must produce this voltage with any voltage ripple less than USB. As the buck converter will be operating from battery power, the input voltage will vary, however will be roughly $12V$. The Raspberry Pi also can draw a maximum current of $5A$ so it was decided that the converter will be able to be able to supply $6.5A$ in order to allow headroom for additional peripherals. Finally the efficiency of greater than $85\%$ was selected in order to minimise the requirement for heatsinks or active cooling methods.
+
+\subsection{Circuit Selection}
+% TODO Finish the circuit selection & reasoning
+There are two types of buck converter circuits, synchronous and asynchronous, the asynchronous design is simpler to control as it only contains one MOSFET however at 
+
+\subsection{Compoment Selection}
+In order to calculate the values of the components, the duty cycle, frequency and off time must be calculated.
+\begin{align}
+    d &= {V_{out} \over V_{in}} \\
+    d &= {5 \over 12} \\
+    d &\approx 0.42
+\end{align}
+
+For the frequency of the PWM signal used to drive the buck converter, $1mHz$ was selected as it provides a lower voltage ripple, lower under and overshoot voltages, and a smaller design footprint, as smaller capacitors and inductors are required.
+\begin{align}
+    f &= 1mHz \\
+    f &= 1 \times 10^{6} Hz \\
+    \therefore T &= 1 \times 10^{-6} s \\
+    t_{off} &= T(1-d) \\
+    t_{off} &= 1 \times 10^{-6} (1 - 0.42) \\
+    \therefore t_{off} &= 5.8 \times 10^{-7} s
+\end{align}
+
+Next is to calulate the value of the inductor, using the inductor equation $V = {L {{di} \over {dt}}}$. The calculations will assume that the voltage Raspberry Pi.
+\begin{align}
+    V &= {{L} {{di} \over {dt}}} \\
+    % {di} \over {dt} &= {{V} \over {L}} \\
+    % di &= {{{V} \over {L}} dt} \\
+    % \int di &= {\int {{V} \over {L}} dt} \\
+    % \int di &= {{{1} \over {L}} \int V dt} \\
+    % i &= {{1} \over {L}} \int V dt \\
+    % Thats all the math to solve for L, not sure if it's needed
+    \therefore L &= {{\int V dt} \over {\Delta I}} \\
+    L &= {{V_{out} \cdot t_{off}} \over {\Delta I}} \\
+    \Delta I &= I_{min} \cdot 2 \\
+    \Delta I &= 0.4 \cdot 2 \\
+    \Delta I &= 0.8A \\
+    \therefore L &= {{5 \cdot 5.8 \times 10^{-7}} \over {0.8}} \\
+    \therefore L &= 3.625 \times 10^{-6} H \\
+    L &= 3.625 \mu H
+\end{align}
+
+Then the capacitor values can be calculated using the capacitor equation, $I = {C {{dv} \over {dt}}}$. The current input will need to be calulated as a part of determining the capacitance required. Initially the discontinuous capacitance will be calulated, denoted by $C_D$, then the capacitance of the continous capacitor will be calculated, denoted by $C_C$. The peak to peak voltage has also been decreased to account for the Equivalent Series Resistance (ESR) of the capacitors, which will greatly increase the $V_{pk-pk}$.
+\begin{align}
+    P_{max} &= 5V \cdot 6.5A \\
+    P_{max} &= 32.5W \\
+    I_{in} &= {{P_{max}} \over {V_{in}}} \\
+    I_{in} &= {{32.5} \over {12}} \\
+    I_{in} &\approx 3A \\
+    V_{pk-pk} &= 0.01V \\
+    I &= {C {{dv} \over {dt}}} \\
+    \therefore C &= {{\int I dt} \over {\Delta V}} \\
+    \therefore C &= {{I_{in} \cdot t_{off}} \over {\Delta V}} \\
+    C_D &= {{3 \cdot 5.8 \times 10^{-7}} \over {0.01}} \\
+    C_D &= 1.74 \times 10^{-4} F \\
+    C_D &= 174 \mu F
+\end{align}
+
+As the current across the continous capacitor is a triangular wave, the integral will be calculated using the area of a triangle, $A = {{{1} \over {2}} bh}$.
+\begin{align}
+    C_C &= {{\int I dt} \over {\Delta V}} \\
+    \int I dt &= {{{1} \over {2}} bh} \\
+    b &= {T \over 2} \\ 
+    h &= {{\Delta I} \over {2}} \\
+    \therefore \int I dt &= {{{T \over 2} \cdot {{\Delta I} \over 2}} \over {2}} \\
+    \int I dt &= {{T \cdot \Delta I} \over 8} \\
+    \therefore C_C &= {{T \cdot \Delta I} \over {8 \cdot \Delta V}} \\
+    C_C &= {{1 \times 10^{-6} \cdot 0.8} \over {8 \cdot 0.01}} \\
+    C_C &= 1 \times 10^{-5} F \\
+    C_C &= 10 \mu F
+\end{align}
